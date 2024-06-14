@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Msitu Africa Carbon Offset Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <p class="attention">Attention! This calculator was created in test mode and does NOT provide real world calculation result data!</p>
+    <h1>Msitu Africa API</h1>
+    <h2>Carbon Offset Calculator</h2>
+    <div class="form">
+      <label for="industry">Select Industry:</label>
+      <select id="industry">
+        <option value="open">Open</option>
+        <option value="carbonTax">Carbon Tax</option>
+        <option value="mobilityTransport">Mobility and Transport</option>
+        <option value="financial">Financial Services</option>
+        <option value="ecoTourism">Eco Tourism</option>
+        <option value="ecommerce">eCommerce</option>
+        <option value="airlinesBooking">Airlines and Booking Agency</option>
+      </select>
+      
+      <div id="inputFields">
+        <!-- Input fields dynamically generated based on industry selection -->
+      </div>
+      
+      <button onclick="calculateOffsets()">Calculate Offset</button>
+    </div>
+    
+    <div id="results">
+      <!-- Results displayed here -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
